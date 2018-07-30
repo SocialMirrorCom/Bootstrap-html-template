@@ -22,18 +22,28 @@
       <div class="col box2"></div>
     </div>
   </div>
-  <div class="container" style="height: 200px; background-color: teal">
+  <div class="container" style="height: 200px; background-color: yellow">
     <!--class row добавляет ряд, может включать в себя 12 col, col-4 - 1/3 ширины ряда-->
     <div class="row">
-      <!--class col создает колонку-->
-      <div class="col-4 box1"></div>
-      <div class="col-8 box2"></div>
+      <!--class col создает колонку, если col (экстра смол) не задан, то он по умолчанию а маленьком экране становится один под другим-->
+      <div class="col-md-6 col-xl-8 box1"></div>
+      <div class="col-md-6 col-xl-4 box2"></div>
     </div>
   </div>
 
   <!--class container-fluid располагает контент от края до края страницы-->
-  <div class="container-fluid" style="height: 200px; background-color: yellow">
-
+  <div class="container-fluid" style="height: 200px; background-color: lightgreen">
+    <!--class row добавляет ряд, может включать в себя 12 col, col-4 - 1/3 ширины ряда-->
+    <div class="row">
+      <!--class col создает колонку-->
+      <!--extra small < 576 px  - .col-
+          small >=576 px  - .col-sm-
+          medium >=768px - .col-md-
+          large >= 992px - .col-lg-
+          extra large >= 1200px - .col-xl- -->
+      <div class="col-4 col-md-8 col-xl-6 box1"></div>
+      <div class="col-8 col-md-4 col-xl-6 box2"></div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
